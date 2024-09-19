@@ -1,11 +1,7 @@
 pandas
-plotly
+
 streamlit
 
 jugaad_data
-jugaad_data
 
-matplotlib
-pytz
-os
-glob2
+
