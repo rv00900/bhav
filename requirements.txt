@@ -1,0 +1,11 @@
+pandas
+plotly
+streamlit
+selenium
+jugaad_data
+jugaad_data
+webdriver_manager
+matplotlib
+pytz
+os
+glob2

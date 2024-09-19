@@ -53,7 +53,7 @@ if option =="BSE_BHAVCOPY":
     options.add_argument("--disable-notifications")
 
 
-    download_dir = "/home/micro2/Documents/bhavt1/" 
+    download_dir = "bhavt1/" 
     chrome_prefs = {
         "download.default_directory": download_dir,
         "download.prompt_for_download": False,  
@@ -96,8 +96,8 @@ if option =="BSE_BHAVCOPY":
             driver.get(url)
             time.sleep(2)
             print(url)
-            zip_folder = "/home/micro2/Documents/bhavt1/" 
-            extract_folder = '/home/micro2/Documents/bhbse/'
+            zip_folder = "/bhavt1/" 
+            extract_folder = '/bhbse/'
             os.makedirs(extract_folder, exist_ok=True)
             for file_name in os.listdir(zip_folder):
                 if file_name.endswith(".ZIP"):
@@ -137,7 +137,7 @@ if option == "NSE_BHAVCOPY":
     print("year",year)
     print("month",month)
     print("day",day)
-    ae =bhavcopy_save(date(year,month,day), "/nsebha/")
+    ae =bhavcopy_save(date(year,month,day), "/workspaces/bhav/nsebhav")
     print(ae)
     dt = pd.read_csv(f"{ae}")
     st.dataframe(dt)
